@@ -1,0 +1,57 @@
+/* @theme seek */
+
+@import 'default';
+
+@font-face {
+    font-family: "SEEKSans";
+    src: url('./themes/fonts/SEEKSans-Normal.otf') format('opentype');
+}
+
+body {
+    font-family: 'SEEKSans', sans-serif;
+}
+
+h1 {
+    color: #E60278;
+}
+
+/* Primary Palette */
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #0D3880;
+}
+
+/* Secondary Palette */
+p:nth-of-type(1) {
+    color: #5C2261;
+}
+
+p:nth-of-type(2) {
+    color: #B41782;
+}
+
+p:nth-of-type(3) {
+    color: #D33D6E;
+}
+
+p:nth-of-type(4) {
+    color: #080559;
+}
+
+p:nth-of-type(5) {
+    color: #3F51B5;
+}
+
+p:nth-of-type(6) {
+    color: #00A5AD;
+}
+
+
+.footer img {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
