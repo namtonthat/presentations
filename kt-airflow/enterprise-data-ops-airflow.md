@@ -1,8 +1,13 @@
 ---
 marp: true
 theme: seek
-# footer: '![image](../themes/backgrounds/seek-footer.png)'
 ---
+
+<style>
+section {
+  font-family: 'SEEK Sans';
+}
+</style>
 
 ![](./.vscode/themes/seek-logo.png)
 #  :office: Enterprise Data Ops Airflow
@@ -40,11 +45,11 @@ theme: seek
     - Reduce the time to build by 50%
 
 - Achieved by:
-    1. Syncing `DAGs` and `variables` to AWS S3 into the `ga-data-airflow-dags-{env}` bucket.
+    1. Sync `DAGs`/ `variables` into `ga-data-airflow-dags-{env}` S3 bucket.
     2. Splitting the Dockerfile into a multi stage build
       - `airflow_base`: for requirements
       - `airflow_release`: for `entrypoint.sh` / `airflow.cfg` changes
-    3. Update `entrypoint.sh` using `aws s3 sync` to sync changes back
+    3. Update `entrypoint.sh` using `aws s3 sync` to sync DAGs back
 
 - *Other changes*:
     - Using SEEK's open source software plugins (`seek-oss/docker-ecr-publish`)
@@ -180,7 +185,7 @@ for dag_config in dags_configs:
 ---
 
 ## Airflow upgrades
-- Planned to start July 2023
+- Planned to complete by end of July 2023
 - Migration from 1.10.15 to 2.6.2 (with support for Python 3.11)
 - Planned changes
     - Backup Postgres database
