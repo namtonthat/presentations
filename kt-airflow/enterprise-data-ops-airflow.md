@@ -41,19 +41,22 @@ theme: seek
 
 - Achieved by:
     1. Syncing `DAGs` and `variables` to AWS S3 into the `ga-data-airflow-dags-{env}` bucket.
-    2. Updates to `entrypoint.sh` using `aws s3 sync` to sync changes back
+    2. Splitting the Dockerfile into a multi stage build
+      - `airflow_base`: for requirements
+      - `airflow_release`: for `entrypoint.sh` / `airflow.cfg` changes
+    3. Update `entrypoint.sh` using `aws s3 sync` to sync changes back
 
 - *Other changes*:
     - Using SEEK's open source software plugins (`seek-oss/docker-ecr-publish`)
 ---
 # 🎯 Planned CI/CD - `develop`
-![width:1000px](images/planned-cicd-develop.jpg)
+![width:1200px](images/planned-cicd-develop.jpg)
 
 ---
 
 # 🎯 Planned CI/CD - `master`
 Difference between `develop` and `master` is that each PR is a **squash and merge**.
-![width:1000px](images/planned-cicd-master.jpg)
+![width:1200px](images/planned-cicd-master.jpg)
 
 ---
 
@@ -66,9 +69,9 @@ Difference between `develop` and `master` is that each PR is a **squash and merg
 # :clock1: Timing differences - Planned CI/CD
 - Build times:
     - 5 minutes for DAG / variable changes (most of the time ~95%)
-    - 11 minutes for rebuilding image
+    - 10 minutes for rebuilding image
 
-![width:1000px](images/planned-cicd-timings.jpg)
+![width:1200px](images/planned-cicd-timings.jpg)
 
 ---
 
