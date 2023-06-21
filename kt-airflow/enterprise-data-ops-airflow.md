@@ -185,7 +185,7 @@ for dag_config in dags_configs:
 ---
 
 ## Airflow upgrades
-- Planned to complete by end of July 2023
+- Work planned to start from July 2023
 - Migration from 1.10.15 to 2.6.2 (with support for Python 3.11)
 - Planned changes
     - Backup Postgres database
