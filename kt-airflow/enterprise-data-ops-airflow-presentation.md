@@ -26,7 +26,6 @@ section {
     - Present
     - Planned
 
-- :rainbow: Future of Airflow
 - :question: Questions
 
 
@@ -79,9 +78,8 @@ Difference between `develop` and `master` is that each PR is a **squash and merg
 ![width:1200px](images/planned-cicd-timings.jpg)
 
 
---- 
+---
 
 ## :question: Questions
 
 
----
