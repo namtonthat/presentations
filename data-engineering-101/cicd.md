@@ -9,6 +9,7 @@ section {
 </style>
 
 # Integrating CI/CD Pipelines in Data Engineering
+Presented by Nam Tonthat
 
 ---
 
@@ -114,4 +115,3 @@ Uses:
 - Your time to ask!
 - Anything you'd like to know or discuss further?
 
----
