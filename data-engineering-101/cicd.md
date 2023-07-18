@@ -13,27 +13,29 @@ Presented by Nam Tonthat
 
 ---
 
-# Agenda
+# 📝 Agenda
 
-1. State of currnt data tools
-2. ETL Process with Fivetran, `dbt` and Airflow
-3. Invoking CI/CD Pipelines
-4. Data Engineering Best Practices
-5. Various File Types in Data Engineering
-6. Q&A and Interactive Session
+1. 🔧 Open Stack Tools
+2. 🏗️ Modern Data Stack
+3. 🔄 ETL Process with Fivetran, `dbt` and Airflow
+4. 🚀 Invoking CI/CD Pipelines
+5. 👍 Data Engineering Best Practices
+6. 📄 Various File Types in Data Engineering
+7. 💡 Q&A and Interactive Session
 
 ---
 
-# Open Stack Tools 
+# 🔧 Open Stack Tools
 ![Open stack tools](images/data-tools.webp)
 
 ---
-# Modern Data Stack 
+
+# 🏗️ Modern Data Stack
 ![Modern Data Stack](images/modern-data-stack.webp)
 
 ---
 
-# `ELT` - `EL` step
+# 🔄 `ELT` - `EL` step
 ## Fivetran
 - Managed PaaS to capture data into warehousing. 
 - Uses CDC
@@ -42,14 +44,15 @@ Presented by Nam Tonthat
  
 ---
 
-# `ELT` - `T` step
+# 🔄 `ELT` - `T` step
 ## `dbt`
 - Streamlining SQL transformations with linage and integration with a lot of data governance
 - Implementing version control and testing
 
 
 ---
-# `ELT` - `T` step
+
+# 🔄 `ELT` - `T` step
 ## `dbt`
 ### Sample script 
 ```
@@ -63,10 +66,12 @@ orders as (
 
     select * from {{ ref('stg_orders') }}
 
-),
+)
 ```
+
 ---
-# `ELT` - the glue between `EL` and `T`
+
+# 🔄 `ELT` - the glue between `EL` and `T`
 ## Airflow - orchestrator
 
 - Orchestrating complex data workflows
@@ -77,7 +82,7 @@ orders as (
 
 ---
 
-# File Type Comparison
+# 📄 File Type Comparison
 
 |      | CSV | JSON | Parquet | Delta | Avro |
 |:----:|:---:|:----:|:-------:|:-----:|:----:|
@@ -92,7 +97,7 @@ orders as (
 
 ---
 
-# Invoking CI/CD Pipelines
+# 🚀 Invoking CI/CD Pipelines
 
 - Automating actions and behaviours
 - *What do you think would be good triggers for CI/CD?*
@@ -103,15 +108,14 @@ Uses:
 
 
 ---
-# Git strategy
+
+# 👍 Git strategy
 
 ![Git strategy](images/git-strategy.jpg)
 
 ---
 
-# Q&A Session
-
+# 💡 Q&A Session
 
 - Your time to ask!
 - Anything you'd like to know or discuss further?
-
