@@ -105,9 +105,9 @@ Reduce manual effort maintaing multiple DAGs for different envs
 ---
 ### :wrench: Maintenance
 #### What does it mean for you?
-1.  If the DAG is already switched on in `unified-airflow` in production. Switch over completely to `airflow-fargate-corporate`.
+🟢  If the DAG is already switched on in `unified-airflow` in production. Switch over completely to `airflow-fargate-corporate`.
 
-2.  Otherwise if the DAG exists in `unified-airflow` but not switched on, you'll have to edit both the `airflow-fargate-corporate` and `docker-airflow` repos to keep them in sync. (Only `dag.py` related changes)
+🟡  Otherwise if the DAG exists in `unified-airflow` but not switched on, you'll have to edit both the `airflow-fargate-corporate` and `docker-airflow` repos to keep them in sync. (Only `dag.py` related changes)
 
 ---
 
